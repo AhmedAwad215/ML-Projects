@@ -1,0 +1,97 @@
+# E-commerce Customer Spending Prediction
+
+## 📌 Overview
+
+This project focuses on predicting the yearly amount spent by e-commerce customers using Machine Learning.
+
+The dataset contains information about customers' activity on the company's website and mobile application, along with their membership duration and yearly spending.
+
+The problem is formulated as a **Supervised Regression** task, where the goal is to predict `Yearly Amount Spent`.
+
+---
+
+## 📊 Dataset
+
+**Dataset:** E-commerce Customers
+
+The dataset contains 500 customer records and 8 columns.
+
+### Features
+
+| Feature                | Description                     |
+| ---------------------- | ------------------------------- |
+| `Email`                | Customer email                  |
+| `Address`              | Customer address                |
+| `Avatar`               | Customer avatar                 |
+| `Avg Session Length`   | Average session duration        |
+| `Time on App`          | Time spent using the mobile app |
+| `Time on Website`      | Time spent on the website       |
+| `Length of Membership` | Duration of customer membership |
+
+### Target
+
+| Target                | Description                |
+| --------------------- | -------------------------- |
+| `Yearly Amount Spent` | Customer's yearly spending |
+
+The dataset structure and feature definitions are documented in multiple versions of the E-commerce Customers analysis.
+
+---
+
+## 🧹 Data Preprocessing
+
+The following preprocessing steps are performed:
+
+* Inspect the dataset
+* Check for missing values
+* Check for duplicated records
+* Analyze data types
+* Remove unnecessary customer-identification columns
+* Select relevant numerical features
+* Split the data into training and testing sets
+
+The columns `Email`, `Address`, and `Avatar` are excluded from the modeling features because they do not provide useful numerical information for predicting yearly spending.
+
+---
+
+## 🔍 Exploratory Data Analysis
+
+The project includes exploratory analysis to investigate the relationship between customer behavior and yearly spending.
+
+Important relationships include:
+
+* Average Session Length vs Yearly Amount Spent
+* Time on App vs Yearly Amount Spent
+* Time on Website vs Yearly Amount Spent
+* Length of Membership vs Yearly Amount Spent
+
+---
+
+## 🤖 Machine Learning Model
+
+### Linear Regression
+
+---
+
+## 📈 Model Evaluation
+
+The model is evaluated using:
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score
+
+These metrics help evaluate how accurately the regression model predicts customer yearly spending.
+
+---
+
+## 🛠️ Technologies
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook
